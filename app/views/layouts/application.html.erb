@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Demo App</title>
+  <title>Brainfront.com</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,10 +10,11 @@
   <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="navbar-inner">
       <div class="container">
-        <%= link_to "Demo App", root_path, id: "logo" %>
+        <%= link_to "Brainfront", root_path, id: "logo" %>
         <nav>
           <ul class="nav pull-right">
-            <li><%= link_to "Home",    root_path %></li>
+            <li><%= link_to "Users",    users_path %></li>
+            <li><%= link_to "Tweets",    "/tweets" %></li>
             <li><%= link_to "Help",    help_path %></li>
           </ul>
         </nav>
@@ -26,11 +27,11 @@
   
   <footer class="footer">
     <small>
-      Learn To Code
+      Learn To Code, Yo!
     </small>
     <nav>
       <ul>
-        <li><%= link_to "Contact", 'http://www.twitter.com/riosae' %></li>
+        <li><%= link_to "Contact mia via Twitter", 'http://www.twitter.com/riosae' %></li>
         
       </ul>
     </nav>
